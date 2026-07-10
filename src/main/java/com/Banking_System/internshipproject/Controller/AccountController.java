@@ -13,7 +13,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/accounts")
-@CrossOrigin(origins = "http://localhost:5173")
+
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://bank-management-frontendd.onrender.com"
+})
 public class AccountController {
 
     @Autowired
